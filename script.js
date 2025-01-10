@@ -45,7 +45,7 @@ const yoKaiList = [
     { name: "Tanto", img: "Tanto.png" },
     { name: "Kirene", img: "Kirene.png" },
     { name: "Toranka", img: "Toranka.png" },
-    { name: "Catleen", img: "Catleen.png" },
+    { name: "Catleen", img: "Catleen.gif" },
     { name: "Gustaf", img: "Gustaf.png" },
     { name: "Gowin", img: "Gowin.png" },
     { name: "Seirei Banbarayar", img: "Seirei_Banbarayar.png" },
@@ -207,27 +207,3 @@ window.addEventListener("beforeunload", (event) => {
         event.returnValue = "¿Estás seguro de que quieres salir? Se perderá todo el progreso.";
     }
 });
-
-// Función para cambiar la imagen de un Yo-kai tras hacer clic en ella
-function enableYoKaiClickEvents() {
-    yoKaiList.forEach((yoKai, index) => {
-        const yoKaiImg = document.getElementById(`yo-kai${index + 1}`);
-        
-        // Asegúrate de que el elemento de imagen exista en el DOM
-        if (yoKaiImg) {
-            yoKaiImg.addEventListener("click", () => {
-                // Verifica si el Yo-kai ya ha sido desbloqueado
-                const normalizedYoKaiName = normalizeString(yoKai.name);
-                if (unlockedYoKai.has(normalizedYoKaiName)) {
-                    // Cambia la imagen a "black_catleen.png" si es "catleen.png"
-                    if (yoKaiImg.src.includes("Catleen.png")) {
-                        yoKaiImg.src = "Black_Catleen.png";
-                    }
-                }
-            });
-        }
-    });
-}
-
-// Llama a esta función después de que se hayan añadido las imágenes al DOM
-enableYoKaiClickEvents();
