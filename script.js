@@ -2,7 +2,7 @@
 const yoKaiList = [
     { name: "Ogamitaoshi", img: "Ogamitaoshi.png" },
     { name: "Capitán Dodo", aliases: ["Capitán Dodo", "Captain Dodo"], img: "Capitan_Dodo.png" },
-    { name: "Chousensha", img: "Chousensha.png" },
+    { name: "Chousensha", img: "Chosensha.png" },
     { name: "Monomaneking", img: "Monomaneking.png" },
     { name: "Morigami Rex", img: "Morigami_Rex.png" },
     { name: "Wibblejiro", aliases: ["Wibblejiro", "Wobblejiro", "Punijiro"], img: "Wibblejiro.png" },
