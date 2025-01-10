@@ -220,8 +220,8 @@ function enableYoKaiClickEvents() {
                 const normalizedYoKaiName = normalizeString(yoKai.name);
                 if (unlockedYoKai.has(normalizedYoKaiName)) {
                     // Cambia la imagen a "black_catleen.png" si es "catleen.png"
-                    if (yoKaiImg.src.includes("catleen.png")) {
-                        yoKaiImg.src = "img/black_catleen.png";
+                    if (yoKaiImg.src.includes("Catleen.png")) {
+                        yoKaiImg.src = "Black_Catleen.png";
                     }
                 }
             });
