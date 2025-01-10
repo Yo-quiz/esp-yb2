@@ -1,4 +1,3 @@
-// Lista completa de Yo-kai con sus nombres e imágenes
 const yoKaiList = [
     { name: "Ogamitaoshi", img: "Ogamitaoshi.png" },
     { name: "Capitán Dodo", aliases: ["Capitán Dodo", "Captain Dodo"], img: "Capitan_Dodo.png" },
